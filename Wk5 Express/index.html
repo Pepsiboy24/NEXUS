@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Homepage</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f4f4f4; }
+        h1 { color: #333; }
+        nav a { margin: 0 15px; text-decoration: none; color: #007bff; font-weight: bold; }
+        .container { background: white; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Express Server Homepage!</h1>
+        <p>This page is being served as a static HTML file from the <code>public</code> folder.</p>
+        <nav>
+            <a href="/about">About Us</a>
+            |
+            <a href="/contact">Contact</a>
+            |
+            <a href="/non-existent-route">Test 404</a>
+        </nav>
+        <p>Check your console! Every time you click a link, the middleware logs the request.</p>
+    </div>
+</body>
+</html>
